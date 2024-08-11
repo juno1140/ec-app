@@ -16,6 +16,33 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+{{--        $table->string('phone');
+            $table->string('postnumber');
+            $table->string('address');--}}
+
+        <!-- Phone -->
+        <div class="mt-4">
+            <x-input-label for="phone" value="電話番号" />
+            <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autocomplete="phone" />
+            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+            <span class="text-gray-500">※ハイフン(-)なしで、数字だけで入力してください</span>
+        </div>
+
+        <!-- Postnumber -->
+        <div class="mt-4">
+            <x-input-label for="postnumber" value="郵便番号" />
+            <x-text-input id="postnumber" class="block mt-1 w-full" type="text" name="postnumber" :value="old('postnumber')" required autocomplete="postnumber" />
+            <x-input-error :messages="$errors->get('postnumber')" class="mt-2" />
+            <span class="text-gray-500">※ハイフン(-)なしで、数字だけで入力してください</span>
+        </div>
+
+        <!-- Address -->
+        <div class="mt-4">
+            <x-input-label for="address" value="住所" />
+            <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autocomplete="address" />
+            <x-input-error :messages="$errors->get('address')" class="mt-2" />
+        </div>
+
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
@@ -27,6 +54,7 @@
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
+
 
         <!-- Confirm Password -->
         <div class="mt-4">

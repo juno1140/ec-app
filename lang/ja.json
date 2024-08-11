@@ -137,5 +137,8 @@
     "per page": "毎ページ",
     "results": "件",
     "to": "から",
-    "Showing": "表示中："
+    "Showing": "表示中：",
+    "Phone": "電話番号",
+    "Post Number": "郵便番号",
+    "Address": "住所"
 }
